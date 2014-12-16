@@ -15,6 +15,7 @@ To Use, Plug an led to gpio pin 17 of the Raspberry Pi
 Example Commands
 --------------------
 ./morse TEXTWITHNOSPACES
+
 ./morse "A string of words to be turned into morse code"
 
 
@@ -26,8 +27,12 @@ with just using a bunch of if, if else, else statments. The reason I used a whil
 I from there created 4 classes to implement the code:
 
 gpioW()     this writes a value of 0 or 1 to the GPIO pin
+
 inletter()	sleeps the code for the according time when off interval inside a letter is needed.
+
 dot() 	  	turns the light on and sleeps for the dot on time.
+
 dash() 	  	turns the light off and sleeps for the time off time.
+
 
 This removed the repetiveness of typing out all the commands for turning on and off the light and sleeping.
